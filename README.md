@@ -8,7 +8,7 @@
 
  安装的时候，最好已经实现了通过console模式，实现了交易转账。请参考[基于以太坊创建私有链进行挖矿、交易](http://feilong.tech/?p=206)和[基于以太坊实现局域网多节点挖矿](http://feilong.tech/?p=212)
 
-#### A端和B端
+#### Ubuntu端和Mac端
 
  - 运行geth `geth --datadir data00/ --networked  5201314 --rpc --rpccorsdomain '*' --rpcapi 'eth,personal,net,admin' console`
  - 克隆项目 `https://github.com/tyl569/go-ethereum-nodejs.git`
@@ -28,8 +28,7 @@
  ![](doc/img/send2.png)
  ![](doc/img/send3.png)
 
-#### 因为交易是先写到本地的区块，然后再同步到其他的区块，所以交易的时候，可能会有时间戳差
-
+#### `因为交易是先写到本地的区块，然后再同步到其他的区块，所以交易的时候，可能会有时间戳差`
 
 
 
