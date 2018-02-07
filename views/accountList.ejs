@@ -1,0 +1,21 @@
+<html>
+    <title><%=title%></title>
+    <body>
+        <ul>
+            <li >发币账号: <%=coinBase%>  剩余coin: <%=coinBaseCoinNum%></li>
+            <br />
+            <li>本地账号列表: </li>
+            <table>
+           <% for (var i = 0; i < accountList.length; i ++) { %>
+            <tr>
+                <td>账号address: <%=accountList[i]%> </td>
+                <td>货币量: <%=accountCoinList[i]%></td>
+                
+            </tr>
+            <% } %>
+            </table>
+        </ul>
+        <a href="/account/create">创建新账号</a>
+        <a href="/transfer/create"> 撒币</a>
+    </body>
+</html>
