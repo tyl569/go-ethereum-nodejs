@@ -14,7 +14,7 @@
 
 #### Ubuntu端和Mac端
 
- - 运行geth `geth --datadir data00/ --networked  5201314 --rpc --rpccorsdomain '*' --rpcapi 'eth,personal,net,admin' console`
+ - 运行geth `geth --datadir data00/ --networkid  5201314 --rpc --rpccorsdomain '*' --rpcapi 'eth,personal,net,admin' console`
  - 克隆项目 `https://github.com/tyl569/go-ethereum-nodejs.git`
  - 运行项目 `node index.js`
  - 访问项目 `localhost:3000`
