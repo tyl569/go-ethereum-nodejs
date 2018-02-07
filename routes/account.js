@@ -1,17 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const web3 = require("../web3");
-router.get('/', (req, res) => {
-    var listAccounts = web3.personal.listAccounts;
-    var viewData = {
-        "title" : "accountsList",
-        "accountList" : listAccounts
-
-    }
-    res.render("accountList", viewData);
-});
-
-
 router.get('/list', (req, res) => {
     var number = web3.eth.blockNumber;
     var listAccounts = web3.personal.listAccounts;

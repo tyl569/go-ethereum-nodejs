@@ -11,6 +11,7 @@ var index = require('./routes/index');
 var account = require('./routes/account');
 var transfer = require('./routes/transfer');
 
+app.use("/", index);
 app.use("/index", index);
 app.use("/account", account);
 app.use("/transfer", transfer);
